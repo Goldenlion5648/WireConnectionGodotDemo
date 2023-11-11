@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://cjna5rg4iscjp"]
+
+[ext_resource type="Texture2D" uid="uid://svsoisael1hl" path="res://blackLine.png" id="1_wfngm"]
+[ext_resource type="Texture2D" uid="uid://dttdaxly20721" path="res://onlyOutline.png" id="2_c8qqc"]
+[ext_resource type="FontFile" uid="uid://bw6yhnxbug4dh" path="res://fonts/CourierPrime-Bold.ttf" id="3_pt2hh"]
+[ext_resource type="Script" path="res://password_count_up.gd" id="4_elt2n"]
+
+[node name="number_display" type="Node"]
+
+[node name="Display" type="Sprite2D" parent="."]
+position = Vector2(-6, 1.00002)
+scale = Vector2(4.668, 0.148)
+texture = ExtResource("1_wfngm")
+
+[node name="outline" type="Sprite2D" parent="Display"]
+visible = false
+position = Vector2(-9.09091, 0)
+scale = Vector2(2.6, 2.62)
+texture = ExtResource("2_c8qqc")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = -247.0
+offset_top = -30.0
+offset_right = 224.0
+offset_bottom = 35.0
+theme_override_fonts/mono_font = ExtResource("3_pt2hh")
+theme_override_font_sizes/mono_font_size = 60
+bbcode_enabled = true
+text = "[right][color=green][code]58743598743[/code][/color][/right]"
+scroll_active = false
+script = ExtResource("4_elt2n")

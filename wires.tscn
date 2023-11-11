@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://b2il2rpo1atv8"]
+
+[ext_resource type="Script" path="res://wires.gd" id="1_eja1t"]
+[ext_resource type="PackedScene" uid="uid://5swukaoeboip" path="res://wire_connection.tscn" id="2_waax6"]
+
+[node name="wires" type="Node2D"]
+script = ExtResource("1_eja1t")
+
+[node name="connection1" parent="." instance=ExtResource("2_waax6")]
+position = Vector2(183, 141)
+
+[node name="connection2" parent="." instance=ExtResource("2_waax6")]
+position = Vector2(667, 149)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(575, 324)

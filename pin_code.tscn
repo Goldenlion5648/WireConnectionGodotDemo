@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cewwmfundrrn1"]
+
+[ext_resource type="Script" path="res://pin_code.gd" id="1_hphks"]
+
+[node name="pin_code" type="Node2D"]
+script = ExtResource("1_hphks")
