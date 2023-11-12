@@ -1,5 +1,12 @@
-Generate GDScript quickly by typing brief words or letters.
+Simple Wire connecting puzzle. The main scene is pin_code.tscn and the main code is in pin_code.gd
 
-Customize macros inside of the included ``macros.txt`` file to suit your needs.
+Click and drag to connect nodes with wires, and 
+change properties while the game runs by using the remote tab
+and adjust values on the global object. 
 
-https://user-images.githubusercontent.com/15337628/203465164-9e0dcacc-10ba-49f9-89dc-5f2c86eb4f27.mp4
+Press T to reveal the hidden paper with the solution
+
+Goes with this video here: https://youtu.be/WFjBl-ggJyo
+
+See all my assets here: https://godotengine.org/asset-library/asset?user=ThinkWithGames
+

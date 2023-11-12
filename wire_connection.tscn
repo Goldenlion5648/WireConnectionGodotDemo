@@ -1,13 +1,31 @@
 [gd_scene load_steps=4 format=3 uid="uid://5swukaoeboip"]
 
 [ext_resource type="Texture2D" uid="uid://byyvs374r4523" path="res://icon.svg" id="1_08xvk"]
-[ext_resource type="Script" path="res://wire_connection2.gd" id="1_q0j47"]
+
+[sub_resource type="GDScript" id="GDScript_8w2md"]
+script/source = "extends Area2D
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+
+
+func _on_input_event(viewport: Node, event: InputEvent, shape_idx: int) -> void:
+	if event is InputEventMouseButton and event.is_pressed():
+		print('part2')
+"
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_e5tvj"]
 size = Vector2(130, 130)
 
 [node name="Area2D" type="Area2D"]
-script = ExtResource("1_q0j47")
+script = SubResource("GDScript_8w2md")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(3, 0)
